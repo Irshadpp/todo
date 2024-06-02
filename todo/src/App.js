@@ -1,11 +1,9 @@
-import './App.css';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>hello world</h1>
-      </header>
+    <div className='bg-black min-h-screen flex justify-center items-center'>
+     <TodoList/>
     </div>
   );
 }
