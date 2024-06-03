@@ -8,11 +8,11 @@ const Edit = ({editTodo, task}) =>{
         setValue("")
     }
     return (
-        <form className="mb-4 font-primary w-full" onSubmit={handleSubmit}>
+        <form className="mb- font-primary w-full" onSubmit={handleSubmit}>
             <input type="text" className="outline-none bg-transparent border border-gray-500 w-[465px] py-3 px-3
-            text-white mb-8 rounded placeholder:text-gray-300" placeholder="Update task"
+            text-white mb-1 rounded placeholder:text-gray-300" placeholder={value}
             onChange={(e)=>{
-                setValue(e.target.value)
+                setValue(e.target.value);
             }}
             value={value}
             />
